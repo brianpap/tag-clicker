@@ -1,0 +1,178 @@
+<!doctype html>
+<html><body>    <meta charset="utf-8">
+    <title>tag clicker</title>
+</head>
+<body>
+    
+    <style>
+#aaa {
+     height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+background-color: blue;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+#aaa2 {
+    background-color: white;
+    margin: 10px;
+    width: 100px;
+
+ 
+}
+#aaaa {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+
+  overflow-x: hidden;
+  padding-top: 20px;
+    background-color: red;
+}
+button {
+    color: red;
+    background-color: blue;
+    border: 5px ridge blue;
+    border-radius: 12px 9px 6px 3px;
+    margin-left: 10px;
+}
+p {
+    color: orchid;
+    background-color: blue;
+    margin: 0px;
+  margin-bottom: 3px;
+}
+
+
+    </style>
+<div id="aaa">
+    <div id="aaa2">
+        <div id="cookie" onclick="cookieClick()">
+            <img src="https://bisondesigns.com/sites/default/files/Dog%20Tag%20Red%20ws.jpg" width="100px" height="100px">
+        </div>
+        
+        <p>Number of tags:</p>
+        
+        <p id="numbers">6</p>
+
+        <p>tps</p>
+
+        <p id="tps">0</p></div>
+    </div>
+        
+<div id="aaaa">
+    store:<br>
+        <button onclick="gran()">buy a granma for <span id="gr1">30</span> tags +.3 tps</button><br><br>
+        <button onclick="gran2()">buy a store for <span id="gr2">500</span> tags +5 tps</button><br><br>
+         <button onclick="gran3()">buy a factory for <span id="gr3">1000</span> tags +100 tps</button><br><br>     </div>
+         
+         <audio src="C:\Users\MaxTh\Downloads\audiocheck.net_sweep_10Hz_1000Hz_-3dBFS_1s.wav" id="mm">
+Error: your web browser does not support this audio player.
+</audio>
+<script>
+
+//initial number of cookies    
+var num = 0;
+var x = document.getElementById("mm"); 
+    numbers.innerHTML = num;  
+
+var cookie = document.getElementById("cookie");
+var a = 1;
+var cps = 0;
+var g1 = 30;
+
+function cookieClick() { 
+ 
+x.play()
+
+    num += a;
+
+
+    var numbers = document.getElementById("numbers");
+    
+    
+    numbers.innerHTML = num;      
+    
+ 
+}
+  function gran() {
+    var tps = document.getElementById("tps");
+tps.innerHTML = cps;
+      if(num >= g1) {
+        cps += 0.3;
+        num -= g1;
+       g1 *= 1.06;
+    
+var gr1 = document.getElementById("gr1");
+    gr1.innerHTML = g1;
+  
+    
+    numbers.innerHTML = num;      
+    }else{
+        alert('not enoth');
+    }
+  }
+  var g3 = 500
+    function gran3() {
+        var tps = document.getElementById("tps");
+tps.innerHTML = cps;
+      if(num >= g3) {
+        cps += 100;
+        num -= g3;
+        var tps = document.getElementById("tps");
+tps.innerHTML = cps;
+g3 * 1.06
+       var gr3 = document.getElementById("gr3");
+    gr3.innerHTML = g3;
+    
+    //upgrade level for printing
+    
+  
+    
+    numbers.innerHTML = num;      
+    }else{
+        alert('not enoth');
+    }
+  }
+  
+window.setInterval(function () {
+var tps = document.getElementById("tps");
+tps.innerHTML = cps;
+
+    numbers.innerHTML = num;      
+  addCPS()
+  if(cps > 0)
+  {
+  x.play()
+}
+}, 1000); 
+var g2 = 500;
+function gran2(){
+    if(num >= g2) {
+        cps += 5;
+       num -= g2;
+g2 *= 1.06;
+    
+var gr2 = document.getElementById("gr2");
+    gr2.innerHTML = g2;
+
+    }else{
+            alert('not enoth');
+    }
+}
+
+   function addCPS() {
+  num = num + cps;
+}
+  
+
+
+</script>
+
+</body></html>
