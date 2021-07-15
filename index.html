@@ -111,11 +111,11 @@ x.play()
 }
 function save()
     {
-        localStorage.clickcount = num;
+        localStorage.setItem('a', JSON.stringify(tps));
     }
     function l()
     {
-        num = localStorage.clickcount;
+        var gameLoad = JSON.parse(localStorage.getItem("a"));
     }
   function gran() {
     var tps = document.getElementById("tps");
