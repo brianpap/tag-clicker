@@ -5,6 +5,21 @@
 <body>
     
     <style>
+        button {
+    color: red;
+    background-color: blue;
+    border: 5px ridge blue;
+    border-radius: 20% 15% 10% 5%;
+    margin-left: 2%;
+}
+        #aaa2 {
+    background-color: white;
+    margin: 10%;
+    width: 50%;
+height="25%"
+ 
+}
+        @media(min-width: 1500) {
 #aaa {
      height: 100%;
   width: 50%;
@@ -16,13 +31,7 @@ background-color: blue;
   overflow-x: hidden;
 
 }
-#aaa2 {
-    background-color: white;
-    margin: 10%;
-    width: 50%;
-height="25%"
- 
-}
+
 #aaaa {
   height: 100%;
   width: 50%;
@@ -36,20 +45,48 @@ height="25%"
     background-color: red;
 }
         
-button {
-    color: red;
-    background-color: blue;
-    border: 5px ridge blue;
-    border-radius: 20% 15% 10% 5%;
-    margin-left: 2%;
-}
+
 p {
     color: orchid;
     background-color: blue;
     margin: 0px;
   margin-bottom: 3%;
 }
+        }
+        @media(max-width: 1499){
+            #aaa {
+     height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+background-color: red;
+  overflow-x: hidden;
 
+}
+
+#aaaa {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+
+  overflow-x: hidden;
+
+    background-color: blue;
+}
+        
+
+p {
+    color: blue;
+    background-color: red;
+    margin: 0px;
+  margin-bottom: 3%;
+}
+        }
 
     </style>
 <div id="aaa">
