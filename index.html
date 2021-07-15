@@ -79,6 +79,11 @@ Error: your web browser does not support this audio player.
 <script>
  if (localStorage.clickcount) {
       var num = localStorage.clickcount;
+      var numbers = document.getElementById("numbers");
+    
+    
+    numbers.innerHTML = num;      
+    
     } else {
       var num = 0;
     }
