@@ -109,15 +109,19 @@ x.play()
     
  
 }
-function save()
+    
+    function save()
     {
-        console.debug("a");
-        localStorage.setItem('a', JSON.stringify(tps));
+        localStorage.a = num
     }
+    
+    
     function l()
     {
-        var gameLoad = JSON.parse(localStorage.getItem("a"));
+        document.getElementById("numbers").innerHTML = localStorage.a;
     }
+    
+    
   function gran() {
     var tps = document.getElementById("tps");
 tps.innerHTML = cps;
