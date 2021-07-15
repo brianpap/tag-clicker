@@ -60,7 +60,7 @@ p {
         
         <p>Number of tags:</p>
         
-        <p id="numbers">6</p>
+        <p id="numbers">0</p>
 
         <p>tps</p>
 
@@ -78,8 +78,12 @@ p {
 Error: your web browser does not support this audio player.
 </audio>
 <script>
-  num = parseInt(localStorage.getItem('num')) || 0;
+  if(localStorage.num) 
+  {
+      var num = localStorage.num;
+  }else{
       var num = 0;
+  }
    
 
 //initial number of cookies    
@@ -156,8 +160,9 @@ tps.innerHTML = cps;
 
     numbers.innerHTML = num;      
   addCPS()
-     localStorage.setItem('num',num);
-     localStorage.setItem('tps',cps);
+    if (localStorage) { // Browser supports it
+    localStorage.num = document.getElementById("numbers").innerHTML;
+}
    
   if(cps > 0)
   {
