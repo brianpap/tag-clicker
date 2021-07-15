@@ -78,7 +78,14 @@ p {
 Error: your web browser does not support this audio player.
 </audio>
 <script>
-var num = 0;
+     if (localStorage.clickcount) {
+     
+            var num = localStorage.clickcount;
+    
+    } else {
+      var num = 0;
+    }
+
 //initial number of cookies    
 
 var x = document.getElementById("mm"); 
@@ -104,7 +111,7 @@ x.play()
  
 }
     function a() {
-   localStorage.clear(); 
+  var num = 0;
        
     }
   function gran() {
