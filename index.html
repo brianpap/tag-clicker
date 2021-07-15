@@ -72,6 +72,8 @@ p {
         <button onclick="gran()">buy a granma for <span id="gr1">30</span> tags +.3 tps</button><br><br>
         <button onclick="gran2()">buy a store for <span id="gr2">500</span> tags +5 tps</button><br><br>
          <button onclick="gran3()">buy a factory for <span id="gr3">1000</span> tags +100 tps</button><br><br>
+    <button onclick="save()">save</button>
+    <button oclick="l()">lode</button>
     </div>
          
          <audio src="C:\Users\MaxTh\Downloads\audiocheck.net_sweep_10Hz_1000Hz_-3dBFS_1s.wav" id="mm">
@@ -107,7 +109,14 @@ x.play()
     
  
 }
-
+function save()
+    {
+        localStorage.clickcount = num;
+    }
+    function l()
+    {
+        num = localStorage.clickcount;
+    }
   function gran() {
     var tps = document.getElementById("tps");
 tps.innerHTML = cps;
