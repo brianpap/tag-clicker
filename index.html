@@ -107,7 +107,7 @@ tps.innerHTML = cps;
       if(num >= g1) {
         cps += 0.3;
         num -= g1;
-       g1 += 30;
+       g1 *= 1.06;
     
 var gr1 = document.getElementById("gr1");
     gr1.innerHTML = g1;
@@ -127,7 +127,7 @@ tps.innerHTML = cps;
         num -= g3;
         var tps = document.getElementById("tps");
 tps.innerHTML = cps;
-g3 * 1.06
+g3 *= 1.06;
        var gr3 = document.getElementById("gr3");
     gr3.innerHTML = g3;
     
