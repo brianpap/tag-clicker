@@ -78,13 +78,9 @@ p {
 Error: your web browser does not support this audio player.
 </audio>
 <script>
-     if (localStorage.clickcount) {
-     
-            var num = localStorage.clickcount;
-    
-    } else {
+  num = parseInt(localStorage.getItem('num')) || 0;
       var num = 0;
-    }
+   
 
 //initial number of cookies    
 
@@ -160,8 +156,8 @@ tps.innerHTML = cps;
 
     numbers.innerHTML = num;      
   addCPS()
-    
-      localStorage.clickcount = Number(localStorage.clickcount)+num;
+     localStorage.setItem('num',num);
+     localStorage.setItem('tps',cps);
    
   if(cps > 0)
   {
