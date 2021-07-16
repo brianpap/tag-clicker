@@ -72,7 +72,7 @@ p {
  <button onclick="gran()">buy a granma for <span id="gr1">30</span> tags +1 tps</button><br><br>
  <button onclick="gran2()">buy a store for <span id="gr2">500</span> tags +5 tps</button><br><br>
  <button onclick="gran3()">buy a factory for <span id="gr3">1000</span> tags +100 tps</button><br><br>
-  <button onclick="gran3()">buy a farm for <span id="gr4">5000</span> tags +500 tps</button><br><br>
+  <button onclick="gran4()">buy a farm for <span id="gr4">5000</span> tags +500 tps</button><br><br>
  <button onclick="save()">save</button>
  <button onclick="l()">load</button>
  </div>
@@ -203,7 +203,7 @@ var gr2 = document.getElementById("gr2");
  var g4 = 5000;
 function gran4(){
  if(num >= g4) {
- cps += 500;
+ cps += 5000;
  num -= g4;
 g4 *= 1.06;
  
