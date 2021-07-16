@@ -75,7 +75,7 @@ p {
  <button onclick="gran3()">buy a factory for <span id="gr3">1000</span> tags +100 tps</button><br><br>
   <button onclick="gran4()">buy a farm for <span id="gr4">5000</span> tags +500 tps</button><br><br>
  <button onclick="save()">save</button>
- <button onclick="r()">restock</button>
+ <button onclick="r()">restock -1000 tags </button>
  <button onclick="l()">load</button>
  </div>
  
@@ -116,6 +116,13 @@ x.play()
 }
  function r()
  {
+  if(num> 10000)
+  {
+   g1 = 30;
+   g2 = 500;
+   g3 = 1000;
+   g4 = 5000;
+  }
  }
  function save()
  {
@@ -244,7 +251,8 @@ var gr4 = document.getElementById("gr4");
  function addCPS() {
  num = num + cps;
 }
- 
+window.setInterval(function () {
+},900000)
 
 
 </script>
