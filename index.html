@@ -84,7 +84,11 @@ p {
  <button onclick="gran7()">buy a banck for <span id="gr6">100000</span> tags +5000 tps</button><br><br>
   <button onclick="gran8()">buy a ad2 for 500000 tags +.5 vps</button><br><br>
   <button onclick="gran9()">buy a super facktory for <span id="gr7">1000000</span> tags +10000 tps</button><br><br>
-   <button onclick="gran10()">buy a ad2 for 5000000 tags +1 vps</button><br><br>
+   <button onclick="gran10()">buy a ad3 for 5000000 tags +1 vps</button><br><br>
+  <button onclick="gran11()">buy a banck for <span id="gr8">10000000</span> tags +5000 tps</button><br><br>
+  <button onclick="gran12()">buy a ad4 for 500000 tags +.5 vps</button><br><br>
+  <button onclick="gran13()">buy a super facktory for <span id="gr9">100000000</span> tags +10000 tps</button><br><br>
+   <button onclick="gran14()">buy a ad5 for 500000000 tags +1 vps</button><br><br>
  <button onclick="save()">save</button>
  <button onclick="r()">restock -1000 tags </button>
  <button onclick="l()">load</button>
@@ -103,6 +107,8 @@ var vps = 0;
  var g5 =10000;
  var g6 = 100000;
  var g7 = 1000000;
+  var g9 = 10000000;
+ var g8 = 10000000;
   var g4 = 5000;
  var g3 = 1000;
  var g2 = 500;
@@ -390,7 +396,56 @@ window.setInterval(function () {
  alert('not enoth');
  }
 }
+function gran12(){
+ if(num >= 50000000) {
+ vps += 5;
+ num -= 500000;
 
+ 
+
+
+ }else{
+ alert('not enoth');
+ }
+}
+function gran11(){
+ if(num >= g8) {
+ cps += 50000;
+ num -= g8;
+g8 *= 1.06;
+ 
+var gr8 = document.getElementById("gr8");
+ gr8.innerHTML = g8;
+
+ }else{
+ alert('not enoth');
+ }
+}
+function gran13(){
+ if(num >= 50000000) {
+ vps += 10000;
+ num -= 50000000;
+
+ 
+
+
+ }else{
+ alert('not enoth');
+ }
+}
+function gran14(){
+ if(num >= g9) {
+ cps += 1000000;
+ num -= g9;
+g7 *= 1.06;
+ 
+var gr9 = document.getElementById("gr9");
+ gr9.innerHTML = g9;
+
+ }else{
+ alert('not enoth');
+ }
+}
 
 </script>
 
