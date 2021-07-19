@@ -91,20 +91,20 @@ font-family: monospace;
 
  <table align="center">
  <tr>
- <td ></td>
-  <td></td>
-   <td></td>
-    <td></td>
-     <td></td>
-   <td></td>
-  <td></td>
-   <td></td>
-    <td></td>
-     <td></td>
- </tr>
+<td onclick="a('a1')" id="a1"></td>
+  <td onclick="a('ce11')" id="ce11"></td>
+    <td onclick="a('ce111')" id="ce111"></td>
+
+    <td onclick="a('ce1111')" id="ce1111"></td>
+     <td onclick="a('ce11111')" id="ce11111"></td>
+ 
+   <td onclick="a('ce1111111')" id="ce1111111"></td>
+
+   <td onclick="a('ce111111111')" id="ce111111111"></td>
+  </tr>
  
    <tr>
- <td></td>
+ <td onclick="a('ce11111111111')" id="ce11111111111"></td>
   <td></td>
    <td></td>
     <td></td>
@@ -276,14 +276,15 @@ x.play()
  {
   c = 1;
  }
- 	function a(id) {
+ 	function a(id) 
+  {
 		var d = document.getElementById(id);
 
 		if(c == 1)
 		{
-		a.style.backgroundColor = "red";
+		d.style.backgroundColor = "red";
 	}else if(c == 0){
-		a.style.backgroundColor = "yellow";
+		d.style.backgroundColor = "yellow";
 	}
 		
 	}
