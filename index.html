@@ -6,14 +6,15 @@
 <body>
  
  <style>
+ 
 #aaa {
  height: 100%;
- width: 50%;
+ width: 33%;
  position: fixed;
  z-index: 1;
  top: 0;
  left: 0;
-background-color: blue;
+background-color: red;
  overflow-x: hidden;
 
 }
@@ -24,9 +25,15 @@ background-color: blue;
 
  
 }
+body {
+ background-color: green;
+  height: 100%;
+   table-align: center;
+}
+
 #aaaa {
  height: 100%;
- width: 50%;
+ width: 33%;
  position: fixed;
  z-index: 1;
  top: 0;
@@ -34,28 +41,36 @@ background-color: blue;
 
  overflow-x: hidden;
 
- background-color: red;
+ background-color: blue;
+}
+td {
+ background-color: white;
+ margin: 0px;
+ width: 5%;
+
 }
   #ch {
-   color: red;
-   background-color: red;
+   color: blue;
+   background-color: blue;
    border: 0px red solid;
+
   }
  
 button {
- color: red;
- background-color: blue;
- border: 5px ridge blue;
+ color: green;
+ font-family: monospace;
+ background-color: red;
+ border: 5px ridge red;
  border-radius: 20% 15% 10% 5%;
  margin-left: 2%;
 }
 p {
- color: orchid;
- background-color: blue;
+font-family: monospace;
+ color: green;
+ background-color: red;
  margin: 0px;
  margin-bottom: 3%;
 }
-
 
  </style>
 <div id="aaa">
@@ -72,7 +87,47 @@ p {
 
  <p id="tps">0</p></div>
  </div>
- 
+ <div id="a">
+
+ <table align="center">
+ <tr>
+ <td></td>
+  <td></td>
+   <td></td>
+    <td></td>
+     <td></td>
+ </tr>
+  <tr>
+ <td></td>
+  <td></td>
+   <td></td>
+    <td></td>
+     <td></td>
+ </tr>
+  <tr>
+ <td></td>
+  <td></td>
+   <td></td>
+    <td></td>
+     <td></td>
+ </tr>
+  <tr>
+ <td></td>
+  <td></td>
+   <td></td>
+    <td></td>
+     <td></td>
+ </tr>
+  <tr>
+ <td></td>
+  <td></td>
+   <td></td>
+    <td></td>
+     <td></td>
+ </tr>
+ </table>
+ </div>
+
 <div id="aaaa">
  store:<br>
  <button onclick="gran()">buy a granma for <span id="gr1">30</span> tags +1 tps</button><br><br>
@@ -96,7 +151,7 @@ p {
 <button onclick="so()">sons</button><br>
   <button id="ch"onclick="chet()">aaaaaaaaaaaaaaaaaaaaaaaa<br>aaaaaaaaaaaaaa<br>aaaaaaa<be>a<br>a</button>
  </div>
- 
+
  <audio src="music-grid.wav" id="mm">
 Error: your web browser does not support this audio player.
 </audio>
@@ -450,3 +505,4 @@ var gr9 = document.getElementById("gr9");
 </script>
 
 </body></html>
+
