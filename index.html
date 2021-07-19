@@ -287,15 +287,15 @@ x.play()
 	
  	function f(id) 
   {
-		var d = document.getElementById(id).style.backgroundColor;
+		var d = document.getElementById(id);
 
 		if(c == 1)
 		{
-		d = "red";
+		d.style.backgroundColor = "red";
 	}else if(c == 0){
-		d = "yellow";
+		d.style.backgroundColor = "yellow";
 	}else if(c == 4){
-		d = "green";
+		d.style.backgroundColor = "green";
 	}
 		
 	}
