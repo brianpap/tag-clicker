@@ -11,7 +11,7 @@
  height: 100%;
  width: 33%;
  position: fixed;
- z-index: 0;
+ z-index: 1;
  top: 0;
  left: 0;
 background-color: red;
@@ -89,12 +89,122 @@ font-family: monospace;
  </div>
  <div id="a">
 
-<div align="center">
-<h1>?</h1>
-
-
-</div>
-
+ <table align="center">
+ <tr>
+<td onclick="f('a1')" id="a1"></td>
+  <td onclick="f('ce11')" id="ce11"></td>
+    <td onclick="f('ce111')" id="ce111"></td>
+   <td onclick="f('ce1111')" id="ce1111"></td>
+    <td onclick="f('ce1111')" id="ce1111"></td>
+     <td onclick="f('ce11111')" id="ce11111"></td>
+    <td onclick="f('ce111111')" id="ce111111"></td>
+   <td onclick="f('ce1111111')" id="ce1111111"></td>
+   <td onclick="f('ce11111111')" id="ce11111111"></td>
+   <td onclick="f('ce111111111')" id="ce111111111"></td>
+  </tr>
+ 
+   <tr>
+ <td onclick="f('ce11111111111')" id="ce11111111111"></td>
+  <td></td>
+   <td></td>
+    <td></td>
+     <td></td>
+   <td></td>
+  <td></td>
+   <td></td>
+    <td></td>
+     <td></td>
+ </tr> <tr>
+ <td></td>
+  <td></td>
+   <td></td>
+    <td></td>
+     <td></td>
+   <td></td>
+  <td></td>
+   <td></td>
+    <td></td>
+     <td></td>
+ </tr> <tr>
+ <td></td>
+  <td></td>
+   <td></td>
+    <td></td>
+     <td></td>
+   <td></td>
+  <td></td>
+   <td></td>
+    <td></td>
+     <td></td>
+ </tr> <tr>
+ <td></td>
+  <td></td>
+   <td></td>
+    <td></td>
+     <td></td>
+   <td></td>
+  <td></td>
+   <td></td>
+    <td></td>
+     <td></td>
+ </tr> <tr>
+ <td></td>
+  <td></td>
+   <td></td>
+    <td></td>
+     <td></td>
+   <td></td>
+  <td></td>
+   <td></td>
+    <td></td>
+     <td></td>
+ </tr> <tr>
+ <td></td>
+  <td></td>
+   <td></td>
+    <td></td>
+     <td></td>
+   <td></td>
+  <td></td>
+   <td></td>
+    <td></td>
+     <td></td>
+ </tr> <tr>
+ <td></td>
+  <td></td>
+   <td></td>
+    <td></td>
+     <td></td>
+   <td></td>
+  <td></td>
+   <td></td>
+    <td></td>
+     <td></td>
+ </tr> <tr>
+ <td></td>
+  <td></td>
+   <td></td>
+    <td></td>
+     <td></td>
+   <td></td>
+  <td></td>
+   <td></td>
+    <td></td>
+     <td></td>
+ </tr> <tr>
+ <td></td>
+  <td></td>
+   <td></td>
+    <td></td>
+     <td></td>
+   <td></td>
+  <td></td>
+   <td></td>
+    <td></td>
+     <td></td>
+ </tr>
+ </table>
+ </div>
 
 <div id="aaaa">
  store:<br>
@@ -112,7 +222,7 @@ font-family: monospace;
   <button onclick="gran12()">buy a ad4 for 500000 tags +5 vps</button><br><br>
   <button onclick="gran13()">buy a god facktory for <span id="gr9">100000000</span> tags +10000 tps</button><br><br>
    <button onclick="gran14()">buy a ad5 for 500000000 tags +10 vps</button><br><br>
- <button onclick="aaa()">buy red pant for 0 tags +red pant</button><br><br>
+ <button onclick="c1()">buy red pant for 0 tags +red pant</button><br><br>
  <button onclick="save()">save</button>
  <button onclick="r()">restock -1000 tags </button>
  <button onclick="l()">load</button>
@@ -162,26 +272,22 @@ x.play()
  
  
 }
+ function c1()
+ {
+  c = 1;
+ }
+ 	function f(id) 
+  {
+		var d = document.getElementById(id);
 
-  var d = 3;
-  function a(id) {
-    var a = document.getElementById(id);
-
-    if(d == 1)
-    {
-    a.style.backgroundColor = "red";
-  }else if(d == 0){
-    a.style.backgroundColor = "yellow";
-  }
-    
-  }
-  function aaa() {
-    b = 1;
-  }
-  function aab() {
-    b = 0;
-  }
-
+		if(c == 1)
+		{
+		d.style.backgroundColor = "red";
+	}else if(c == 0){
+		d.style.backgroundColor = "yellow";
+	}
+		
+	}
  function r()
  {
   if(num> 10000)
@@ -495,4 +601,3 @@ var gr9 = document.getElementById("gr9");
 </script>
 
 </body></html>
-
