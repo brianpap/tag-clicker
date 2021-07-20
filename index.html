@@ -11,7 +11,7 @@
  height: 100%;
  width: 33%;
  position: fixed;
- z-index: 0;
+ z-index: 1;
  top: 0;
  left: 0;
 background-color: red;
@@ -81,7 +81,7 @@ font-family: monospace;
  
  <p>Number of tags:</p>
  
- <p id="numbers">0</p>
+ <p id="numbers">-</p>
 
  <p>tps</p>
 
@@ -104,29 +104,7 @@ font-family: monospace;
   </tr>
  
    <tr>
-  <td onclick="f('ce11111111111')" id="ce11111111111"></td>
-  <td onclick="f('ce111111111111')" id="ce111111111111"></td>
-  <td onclick="f('ce1111111111111')" id="ce1111111111111"></td>
-  <td onclick="f('ce11111111111111')" id="ce11111111111111"></td>
-  <td onclick="f('ce111111111111111')" id="ce111111111111111"></td>
-  <td onclick="f('ce1111111111111111')" id="ce1111111111111111"></td>
-  <td onclick="f('ce11111111111111111')" id="ce11111111111111111"></td>
-  <td onclick="f('ce111111111111111111')" id="ce111111111111111111"></td>
-  <td onclick="f('ce1111111111111111111')" id="ce1111111111111111111"></td>
-  <td onclick="f('ce11111111111111111111')" id="ce11111111111111111111"></td>
-  </tr> <tr>
-  <td onclick="f('ce111111111111111111111')" id="ce111111111111111111111"></td>
-  <td onclick="f('ce1111111111111111111111')" id="ce1111111111111111111111"></td>
-  <td onclick="f('ce11111111111111111111111')" id="ce11111111111111111111111"></td>
-  <td onclick="f('ce111111111111111111111111')" id="ce111111111111111111111111"></td>
-  <td onclick="f('ce1111111111111111111111111')" id="ce1111111111111111111111111"></td>
-  <td onclick="f('ce11111111111111111111111111')" id="ce11111111111111111111111111"></td>
-  <td onclick="f('ce111111111111111111111111111')" id="ce111111111111111111111111111"></td>
-  <td onclick="f('ce1111111111111111111111111111')" id="ce1111111111111111111111111111"></td>
-  <td onclick="f('ce11111111111111111111111111111')" id="ce11111111111111111111111111111"></td>
-  <td onclick="f('ce111111111111111111111111111111')" id="ce111111111111111111111111111111"></td>
-   </tr> <tr>
-  <td></td>
+ <td onclick="f('ce11111111111')" id="ce11111111111"></td>
   <td></td>
    <td></td>
     <td></td>
@@ -136,19 +114,8 @@ font-family: monospace;
    <td></td>
     <td></td>
      <td></td>
-   </tr> <tr>
-  <td></td>
-  <td></td>
-   <td></td>
-    <td></td>
-     <td></td>
-   <td></td>
-  <td></td>
-   <td></td>
-    <td></td>
-     <td></td>
-   </tr> <tr>
-  <td></td>
+ </tr> <tr>
+ <td></td>
   <td></td>
    <td></td>
     <td></td>
@@ -158,19 +125,8 @@ font-family: monospace;
    <td></td>
     <td></td>
      <td></td>
-   </tr> <tr>
-  <td></td>
-  <td></td>
-   <td></td>
-    <td></td>
-     <td></td>
-   <td></td>
-  <td></td>
-   <td></td>
-    <td></td>
-     <td></td>
-   </tr> <tr>
-  <td></td>
+ </tr> <tr>
+ <td></td>
   <td></td>
    <td></td>
     <td></td>
@@ -180,8 +136,19 @@ font-family: monospace;
    <td></td>
     <td></td>
      <td></td>
-   </tr> <tr>
+ </tr> <tr>
+ <td></td>
   <td></td>
+   <td></td>
+    <td></td>
+     <td></td>
+   <td></td>
+  <td></td>
+   <td></td>
+    <td></td>
+     <td></td>
+ </tr> <tr>
+ <td></td>
   <td></td>
    <td></td>
     <td></td>
@@ -191,8 +158,8 @@ font-family: monospace;
    <td></td>
     <td></td>
      <td></td>
-   </tr> <tr>
-  <td></td>
+ </tr> <tr>
+ <td></td>
   <td></td>
    <td></td>
     <td></td>
@@ -201,7 +168,40 @@ font-family: monospace;
   <td></td>
    <td></td>
     <td></td>
-<td></td>
+     <td></td>
+ </tr> <tr>
+ <td></td>
+  <td></td>
+   <td></td>
+    <td></td>
+     <td></td>
+   <td></td>
+  <td></td>
+   <td></td>
+    <td></td>
+     <td></td>
+ </tr> <tr>
+ <td></td>
+  <td></td>
+   <td></td>
+    <td></td>
+     <td></td>
+   <td></td>
+  <td></td>
+   <td></td>
+    <td></td>
+     <td></td>
+ </tr> <tr>
+ <td></td>
+  <td></td>
+   <td></td>
+    <td></td>
+     <td></td>
+   <td></td>
+  <td></td>
+   <td></td>
+    <td></td>
+     <td></td>
  </tr>
  </table>
  </div>
@@ -278,27 +278,27 @@ x.play()
  {
   c = 1;
  }
-  function c2 {
-    c = 0;
-  }
-    function c3 {
-    c = 4;
-  }
-  
-  function f(id) 
+	function c2() {
+		c = 0;
+	}
+		function c3() {
+		c = 4;
+	}
+	
+ 	function f(id) 
   {
-    var d = document.getElementById(id).style.backgroundColor;
+		var d = document.getElementById(id);
 
-    if(c == 1)
-    {
-    d = "red";
-  }else if(c == 0){
-    d = "yellow";
-  }else if(c == 4){
-    d = "green";
-  }
-    
-  }
+		if(c == 1)
+		{
+		document.getElementById(id).style.backgroundColor = 'red';
+	}else if(c == 0){
+	document.getElementById(id).style.backgroundColor = 'yellow';
+	}else if(c == 4){
+		document.getElementById(id).style.backgroundColor = 'green';
+	}
+		
+	}
  function r()
  {
   if(num> 10000)
