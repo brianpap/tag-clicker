@@ -1,4 +1,4 @@
-<!doctype html>
+<! <meta name="viewport" content="width=device-width, initial-scale=1.0"><!doctype html>
 <html><body> 
 <meta charset="utf-8">
  <title>tag clicker</title>
@@ -24,13 +24,6 @@ background-color: red;
  width: 50%;
 
  
-}
-.red {
-color: red;
-}
-.blue {
-color: blue;
-background-color: blue;
 }
 body {
  background-color: green;
@@ -85,13 +78,32 @@ font-family: monospace;
  margin: 0px;
  margin-bottom: 3%;
 }
-
+#f {
+  z-index: 1;
+}
+.c {
+  z-index: 2;
+}
  </style>
 <div id="aaa">
-  <fieldset class="blue">
+  <fieldset>
  <div id="aaa2">
- <div id="cookie" onclick="cookieClick()">
- <img src="https://bisondesigns.com/sites/default/files/Dog%20Tag%20Red%20ws.jpg" width="100%" height="50px">
+ <div id="cookie" onclick="cookieClick()" width="100">
+   <img>
+   <svg width="100" height="10">
+     <circle cx="25" cy="10"
+     r="10" fill="white" stroke="black"/>
+     </svg>
+ <svg width="100" height="75">
+   
+   <rect class="c" width="25" height="50" x="12.5" y="0" fill="red" />
+   <circle class="c" cx="25" cy="10" r="2" fill="white" />
+    <circle id="f" cx="25" cy="0" r="10" fill="red"
+    stroke="black"/>
+    <circle cx="25" cy="10" r="2" fill="white" />
+    
+ </svg>
+ </img>
  </div>
  
  <p>Number of tags:</p>
@@ -224,10 +236,10 @@ font-family: monospace;
  </div>
 
 <div id="aaaa">
- <fieldset class="red">
+ <fieldset>
    
    <legend>
-     <fieldset class="red">
+     <fieldset>
        store
      </fieldset>
    </legend>
@@ -638,3 +650,4 @@ var gr9 = document.getElementById("gr9");
 </script>
 
 </body></html>
+i
