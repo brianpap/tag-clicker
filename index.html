@@ -1,4 +1,7 @@
-<!doctype html> <meta name="viewport" content="width=device-width, initial-scale=1.0"><!doctype html>
+
+
+On Wed, Jul 28, 2021 at 12:57 PM Max Packard <maxtheunspeakable@gmail.com> wrote:
+<!doctype html>
 <html><body> 
 <meta charset="utf-8">
  <title>tag clicker</title>
@@ -21,12 +24,12 @@ background-color: red;
 #aaa2 {
  background-color: white;
  margin: 10%;
- width: 50%;
+ width: 10%;
 
  
 }
 body {
- background-color: green;
+ background-color: black;
   height: 100%;
    
 }
@@ -50,20 +53,23 @@ td {
 
 }
   #ch {
-   color: blue;
-   background-color: blue;
+   color: black;
+   background-color: black;
    border: 0px red solid;
 
   }
  
 button {
- color: blue;
+ color: white;
  font-family: monospace;
- background-color: red;
- border: 5px ridge red;
+ background-color: gray;
+ border: 5px ridge white;
  border-radius: 20% 15% 10% 5%;
  margin-left: 2%;
 
+}
+legend {
+  color: white;
 }
 button:hover {
    box-shadow: 3px 3px 3px 3px #cccccc;
@@ -73,8 +79,8 @@ button:hover {
 }
 p {
 font-family: monospace;
- color: green;
- background-color: red;
+ color: white;
+ background-color: black;
  margin: 0px;
  margin-bottom: 3%;
 }
@@ -85,39 +91,26 @@ font-family: monospace;
   z-index: 2;
 }
  </style>
-<div id="aaa">
+<fieldset> 
+ <p> tags:<span id="numbers">0</span> tps:<span id="tps">0</span> <span id="name"></span></p>
+</fieldset>
   <fieldset>
  <div id="aaa2">
  <div id="cookie" onclick="cookieClick()" width="100">
-   <img>
-   <svg width="100" height="10">
-     <circle cx="25" cy="10"
-     r="10" fill="white" stroke="black"/>
-     </svg>
- <svg width="100" height="75">
-   
-   <rect class="c" width="25" height="50" x="12.5" y="0" fill="red" />
-   <circle class="c" cx="25" cy="10" r="2" fill="white" />
-    <circle id="f" cx="25" cy="0" r="10" fill="red"
-    stroke="black"/>
-    <circle cx="25" cy="10" r="2" fill="white" />
-    
- </svg>
- </img>
+   <img src="https://www.nicepng.com/png/detail/787-7872746_png%20file%20black%20price%20tag%20png.png" width="100%">
+
+
  </div>
  
- <p>Number of tags:</p>
- 
- <p id="numbers">-</p>
 
- <p>tps</p>
 
- <p id="tps">0</p></div>
- </div>
- 
- <div id="a">
+</div>
 
- <table align="center">
+
+
+
+
+<!--  <table align="center">
  <tr>
 <td onclick="f('a1')" id="a1"></td>
   <td onclick="f('ce11')" id="ce11"></td>
@@ -232,10 +225,9 @@ font-family: monospace;
     <td></td>
      <td></td>
  </tr>
- </table>
- </div>
+ </table> -->
 
-<div id="aaaa">
+
  <fieldset>
    
    <legend>
@@ -269,12 +261,19 @@ font-family: monospace;
 <button onclick="so()">sons</button><br></feldset>
 <br>
   <button id="ch" onclick="chet()">aaaaaaaaaaaaaaaaaaaaaaaa<br>aaaaaaaaaaaaaa<br>aaaaaaa<be>a<br>a</button>
- </div>
+
 
  <audio src="music-grid(3).wav" id="mm">
 Error: your web browser does not support this audio player.
 </audio>
 <script>
+window.onload = function () {
+        var name = prompt("What is your name");
+        
+        var space = document.getElementById("name");
+        
+        space.innerHTML = name + "'s tag store";
+}
 
  var num = 0;
 var vps = 0;
@@ -316,27 +315,27 @@ x.play()
  {
   c = 1;
  }
-	function c2() {
-		c = 0;
-	}
-		function c3() {
-		c = 4;
-	}
-	
- 	function f(id) 
+  function c2() {
+    c = 0;
+  }
+    function c3() {
+    c = 4;
+  }
+  
+  function f(id) 
   {
-		var d = document.getElementById(id);
+    var d = document.getElementById(id);
 
-		if(c == 1)
-		{
-		document.getElementById(id).style.backgroundColor = 'red';
-	}else if(c == 0){
-	document.getElementById(id).style.backgroundColor = 'yellow';
-	}else if(c == 4){
-		document.getElementById(id).style.backgroundColor = 'green';
-	}
-		
-	}
+    if(c == 1)
+    {
+    document.getElementById(id).style.backgroundColor = 'red';
+  }else if(c == 0){
+  document.getElementById(id).style.backgroundColor = 'yellow';
+  }else if(c == 4){
+    document.getElementById(id).style.backgroundColor = 'green';
+  }
+    
+  }
  function r()
  {
   if(num> 10000)
@@ -650,4 +649,5 @@ var gr9 = document.getElementById("gr9");
 </script>
 
 </body></html>
-i
+
+
